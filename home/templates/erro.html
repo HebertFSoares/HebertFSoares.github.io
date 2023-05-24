@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Erro 404</title>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+    }
+    
+    .error-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .error-message {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .error-title {
+      margin: 5px;
+      font-size: 37px;
+      color: #007bff;
+      margin-bottom: 5px;
+    }
+    
+    .error-paragraph {
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+    
+    .error-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      margin: 25px;
+      text-decoration: none;
+      border-radius: 55px;
+    }
+    
+    .error-right {
+      margin-left: 50px;
+    }
+    
+    .error-svg {
+      width: 700px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="error-message">
+      <h1 class="error-title">Erro 404 - Página não encontrada</h1>
+      <p class="error-paragraph">Desculpe, a página que você está procurando não pode ser encontrada. Verifique se o URL está correto ou entre em contato com o suporte para obter assistência.</p>
+      <a class="error-button" href="{% url 'login' %}">Ir para a tela de login</a>
+    </div>
+    <div class="error-right">
+        <img class="error-svg" src="{% static 'home/img/erro.svg' %}" alt="erro">
+    </div>
+  </div>
+</body>
+</html>
