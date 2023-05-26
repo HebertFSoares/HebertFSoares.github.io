@@ -11033,3 +11033,73 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* Estilos para as seções de habilidades */
+#skills-section {
+  background-color: white;
+  padding: 80px 0;
+}
+
+#skills-section .heading-section {
+  margin-bottom: 30px;
+}
+
+#skills-section h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+#skills-section p {
+  color: #777;
+}
+
+#skills-section .progress-wrap {
+  margin-bottom: 30px;
+}
+
+#skills-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#skills-section .progress {
+  height: 8px;
+  background-color: #f2f2f2;
+}
+
+#skills-section .progress-bar {
+  height: 100%;
+}
+
+#skills-section .progress-bar span {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Cores das barras de progresso */
+.progress .progress-bar.color-1 {
+  background-color: #ffc107;
+}
+
+.progress .progress-bar.color-2 {
+  background-color: #17a2b8;
+}
+
+.progress .progress-bar.color-3 {
+  background-color: #28a745;
+}
+
+.progress .progress-bar.color-4 {
+  background-color: #007bff;
+}
+
+.progress .progress-bar.color-5 {
+  background-color: #fd7e14;
+}
+
+.progress .progress-bar.color-6 {
+  background-color: #dc3545;
+}
