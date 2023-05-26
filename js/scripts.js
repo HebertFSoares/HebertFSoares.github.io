@@ -40,7 +40,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
     var progressBars = document.querySelectorAll('.progress-bar');
     progressBars.forEach(function(progressBar) {
