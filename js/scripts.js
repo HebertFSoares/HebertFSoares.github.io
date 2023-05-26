@@ -40,3 +40,12 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(function(progressBar) {
+      var value = progressBar.getAttribute('aria-valuenow');
+      progressBar.style.width = value + '%';
+    });
+  });
+  
