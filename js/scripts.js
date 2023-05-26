@@ -48,3 +48,43 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+
+  function animateText(element, text) {
+    var index = 0;
+    var isDeleting = false;
+  
+    function type() {
+      if (index < text.length && !isDeleting) {
+        element.textContent += text.charAt(index);
+        index++;
+      } else {
+        isDeleting = true;
+      }
+  
+      if (isDeleting) {
+        element.textContent = text.substring(0, index);
+  
+        if (index === 0) {
+          isDeleting = false;
+        }
+        index--;
+      }
+  
+      var typingSpeed = isDeleting ? 100 : 200; // Velocidade de digitação e apagamento (ajuste conforme necessário)
+      setTimeout(type, typingSpeed);
+    }
+  
+    // Inicia a animação de digitação
+    type();
+  }
+  
+  // Obtém o elemento <h1> com a classe "error-animation"
+  var heading = document.querySelector('.error-animation');
+  
+  // Texto para animação
+  var text = 'Hebert Soares'; // Substitua pelo texto desejado
+  
+  // Chama a função para iniciar a animação
+  animateText(heading, text);
+  
+  
