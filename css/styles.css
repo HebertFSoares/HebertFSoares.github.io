@@ -11023,8 +11023,8 @@ html {
 
 .footer {
   padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #212529;
+  padding-bottom: 5rem; 
+  background-color: #464646;
   color: #fff;
 }
 
