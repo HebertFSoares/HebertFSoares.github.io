@@ -88,37 +88,34 @@ document.addEventListener('DOMContentLoaded', function() {
   var subheadingText = 'Programador Python - Desenvolvedor Web Django'; // Substitua pelo texto desejado
   
   // Chama a função para iniciar a animação nos elementos
+  
   animateText(heading, headingText);
   animateText(subheading, subheadingText);
   
-  $(document).ready(function () {
-    $("#skills-carousel").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            576: {
-                items: 2,
-            },
-            768: {
-                items: 3,
-            },
-            992: {
-                items: 4,
-            },
-            1200: {
-                items: 5,
-            },
-        },
-        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-    });
+  document.addEventListener('DOMContentLoaded', function () {
+    const cardWrappers = document.querySelectorAll('.card-wrapper');
+    const cards = document.querySelectorAll('.card');
+
+    function setCardHeight() {
+        let maxHeight = 0;
+
+        cards.forEach(function (card) {
+            card.style.height = '';
+            const cardHeight = card.offsetHeight;
+            maxHeight = Math.max(maxHeight, cardHeight);
+        });
+
+        cardWrappers.forEach(function (wrapper) {
+            wrapper.style.height = maxHeight + 'px';
+        });
+    }
+
+    setCardHeight();
+
+    window.addEventListener('resize', setCardHeight);
 });
 
   
-  
+
   
   
