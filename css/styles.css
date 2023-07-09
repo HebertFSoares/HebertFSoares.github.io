@@ -11100,5 +11100,27 @@ html {
 
 .progress .progress-bar.color-6 {
   background-color: #dc3545;
+
+}
+
+.arrow-icon {
+  filter: invert(1);
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-equal-height {
+  height: 100%;
+}
+
+.tech-img {
+  max-width: 50%;
+  max-height: 200px; /* Ajuste a altura máxima conforme necessário */
+  margin: auto;
+  height: 100%;
 }
 
