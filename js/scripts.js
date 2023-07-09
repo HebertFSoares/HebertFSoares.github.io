@@ -91,7 +91,33 @@ document.addEventListener('DOMContentLoaded', function() {
   animateText(heading, headingText);
   animateText(subheading, subheadingText);
   
-  
+  $(document).ready(function () {
+    $("#skills-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            },
+            1200: {
+                items: 5,
+            },
+        },
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+    });
+});
+
   
   
   
